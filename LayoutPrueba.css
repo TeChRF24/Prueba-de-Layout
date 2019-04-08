@@ -56,6 +56,61 @@ body{
   height: calc(1080px/2);
   overflow-y: scroll;
 }
-.app2{
+.stories{
+    display: flex;
+    height: 80px;
+    width: inherit;
+}
+.write{
+  display: flex;
+  height: 50px;
+  width: inherit;
+}
+.minimenu{
+  display: flex;
+  height: 30px;
+  width: inherit;
+}
+.live, .photo2, .here{
+  flex: 1;
+}
+.menuphoto{
+  display: flex;
+  height: 300px;
+  width: inherit;
+  flex-direction: column;
+}
+.namephoto{
+  display: flex;
+   height: 50px;
+   width: inherit;
+   justify-content: flex-start;
+}
+.description{
+  height: 50px;
+  width: inherit;
+}
+.uploadimage{
+  height: 200px;
+  width: inherit;
+}
+.stats{
+  height: 35px;
+  width: inherit;
+}
+.sharing{
+  display: flex;
+  height: 20px;
+  width: inherit,
 
+}
+.like, .comment, .share{
+  flex: 1;
+  justify-content: center;
+}
+.profilephoto{
+  border-radius: 50px;
+
+  height: auto;
+  width: 35px;
 }
