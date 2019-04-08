@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+}
+body{
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  display: flex;
+  position: relative;
+  height: calc(1280px / 2);
+  width: calc(720px/2);
+  flex-direction: column;
+}
+.header{
+  display: flex;
+  height: calc(100px/2);
+  width: inherit;
+}
+.photo{
+  display: flex;
+  height: 295px;
+  width: inherit;
+}
+.info{
+  display: flex;
+  height: 100px;
+  width: inherit;
+}
+.about{
+  display: flex;
+  height: 50px;
+
+  flex-direction: row;
+  width: inherit;
+}
+.bout, .photos, .friends {
+  flex: 1;
+}
+.timeline{
+  display: flex;
+  height: 90px;
+  width: inherit;
+}
+.menu{
+  width: inherit;
+  height: calc(87px/2);
+  position: absolute;
+  bottom: 0px;
+
+}
+.scroll{
+  height: calc(1080px/2);
+  overflow-y: scroll;
+}
+.app2{
+
+}
