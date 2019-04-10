@@ -24,6 +24,23 @@ body{
   display: flex;
   height: 295px;
   width: inherit;
+  position: relative;
+}
+.profile{
+  display: flex;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  margin-left: 125px;
+  margin-top: 130px;
+}
+.nombreusuario{
+  display: flex;
+  height: 25px;
+  width: 100px;
+  position: absolute;
+  margin-left: 125px;
+  margin-top: 245px;
 }
 .info{
   display: flex;
@@ -106,11 +123,31 @@ body{
 }
 .like, .comment, .share{
   flex: 1;
-  justify-content: center;
+  text-align: center;
 }
 .profilephoto{
   border-radius: 50px;
-
-  height: auto;
-  width: 35px;
+  height: 40px;
+  width: 40px;
+}
+.name{
+  height: 18px;
+  width: 50px;
+}
+.namephoto1{
+  display: flex;
+  width: calc(150px/2);
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+}.namephoto2{
+  display: flex;
+  width: calc(570px/2);
+  height: inherit;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.fecha{
+  height: 13px;
+  width: 50px;
 }
