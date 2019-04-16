@@ -85,6 +85,7 @@ body{
   background: #F6F7F9;
   flex-direction: row;
   width: inherit;
+  border: none;
 }
 .bout, .photos, .friends {
   flex: 1;
@@ -99,10 +100,45 @@ body{
   color: #1B1F2B;
   border: none;
 }
+.divisor{
+  height: 8px;
+  width: auto;
+  border: none;
+  background: #DCDDE1;
+}
 .timeline{
   display: flex;
   height: 90px;
   width: inherit;
+  border: none;
+}
+.carita{
+  width: 14%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  border: none;
+}
+.carita2{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 8px;
+  right: 3px;
+  background: #DCDDE1;
+  border: none;
+}
+.writing{
+  width: 86%;
+  position: relative;
+  border: none;
+}
+.escribe{
+  position: absolute;
+  top: 10px;
+  left: 4px;
+  color: #DCDDE1;
+  border: none;
 }
 .menu{
   width: inherit;
@@ -121,6 +157,33 @@ body{
     display: flex;
     height: 80px;
     width: inherit;
+    border: none;
+    border-top: .5px solid #DCDDE1;
+}
+.storie1{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.bolita1{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.bolita2{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.storie2{
+  flex-grow: 4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
 }
 .write{
   display: flex;
@@ -174,10 +237,11 @@ body{
   height: 40px;
   width: 40px;
   background: #DCDDE1;
+  border: none;
 }
 .name{
   height: 18px;
-  width: 50px;
+  width: auto;
   margin-left: 8px;
 }
 .namephoto1{
@@ -198,4 +262,5 @@ body{
   height: 13px;
   width: 50px;
   margin-left: 8px;
+  font-size: 12px;
 }
