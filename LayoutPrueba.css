@@ -1,13 +1,24 @@
 * {
   margin: 0;
   padding: 0;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 body{
   display: flex;
   justify-content: center;
 }
-
+.graycolorbackground{
+  background: #DCDDE1;
+}
+.bluecolorbackground{
+  background: #4A67AD;
+}
+.graycolor{
+  color: #DCDDE1;
+}
+.bluecolor{
+  background: #4A67AD;
+}
 .app {
   display: flex;
   position: relative;
@@ -16,6 +27,7 @@ body{
   flex-direction: column;
   margin-top: 20px;
   margin-bottom: 20px;
+  border: 1px solid black;
 }
 .header{
   display: flex;
@@ -23,6 +35,26 @@ body{
   height: 10%;
   width: inherit;
   background: #4A67AD;
+  border: none;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+.yourname{
+  width: 270px;
+  height: 33px;
+  background: #354779;
+  border-radius: 5px;
+  position: relative;
+  bottom: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchname{
+  color: #8393A9;
+  width: 80px;
+  text-align: center;
 }
 .photo{
   display: flex;
@@ -31,6 +63,7 @@ body{
   position: relative;
   background: #FFFFFF;
   justify-content: center;
+  border: none;
 }
 .relleno{
   width: 100%;
@@ -50,6 +83,7 @@ body{
   margin-top: 130px;*/
   z-index: 60;
   background: #DCDDE1;
+  border: .5px solid black;
 }
 .nombreusuario{
   display: flex;
@@ -78,6 +112,49 @@ body{
   display: flex;
   height: 100px;
   width: inherit;
+  flex-direction: column;
+  border: none;
+}
+.more{
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  border: none;
+}
+.morefriends,
+.morefollowing,
+.moremessage,
+.moredots{
+  width: 25%;
+  /*border: .5px solid #DCDDE1;*/
+  border-bottom: 1.5px solid #DCDDE1;
+  border-top: 1.5px solid #DCDDE1;
+}
+.work{
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border: none;
+}
+.dibujito{
+  width: 50px;
+  border: none;
+}
+.trabaja{
+  color: #9498A2;
+  position: relative;
+  left: 5px;
+  padding-top: 4px;
+  border: none;
+}
+.trabajo{
+  color: #394351;
+  font-weight: bold;
+  position: relative;
+  left: 8px;
+  padding-top: 4px;
+  border: none;
 }
 .about{
   display: flex;
@@ -92,12 +169,13 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
 }
 .parrafo{
   text-align: center;
   font-weight: bold;
   font-size: 20px;
-  color: #1B1F2B;
+  color: #394351;
   border: none;
 }
 .divisor{
@@ -137,21 +215,32 @@ body{
   position: absolute;
   top: 10px;
   left: 4px;
-  color: #DCDDE1;
+  color: #9498A2;
   border: none;
 }
 .menu{
   width: inherit;
   height: 5%;
+  border-top: 2.5px solid #DCDDE1;
   /*height: calc(87px/2);*/
   /*position: absolute;
   bottom: 0px;*/
-
+  display: flex;
+  flex-direction: row;
+}
+.menu1,
+.menu2,
+.menu3,
+.menu4{
+  flex: 1;
+  border: .5px solid #DCDDE1;
 }
 .scroll{
   /*height: calc(1080px/2);*/
   height: 85%;
   overflow-y: scroll;
+  overflow-x: hidden;
+  border: none;
 }
 .stories{
     display: flex;
@@ -161,24 +250,28 @@ body{
     border-top: .5px solid #DCDDE1;
 }
 .storie1{
-  flex: 1;
+  width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
 }
 .bolita1{
+  /*margin-left: 2px;*/
   height: 60px;
   width: 60px;
   border-radius: 50%;
+  border: .5px solid #DCDDE1;
 }
 .bolita2{
   height: 60px;
   width: 60px;
   border-radius: 50%;
+  background: #DCDDE1;
+  border: none;
 }
 .storie2{
-  flex-grow: 4;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -187,28 +280,50 @@ body{
 }
 .write{
   display: flex;
-  height: 50px;
+  height: 90px;
   width: inherit;
+  border: none;
 }
 .minimenu{
   display: flex;
   height: 30px;
   width: inherit;
+  text-align: center;
+  justify-content: center;
+  border: none;
+}
+.parrafomenu{
+  text-align: center;
+  height: 20px;
+  width: auto;
+  margin-top: 3px;
+  border: none;
+  color: #9498A2;
 }
 .live, .photo2, .here{
   flex: 1;
+  border-top: .5px solid #9498A2;
+  border-bottom: .5px solid #9498A2;
+}
+.live{
+  border-right: .5px solid #9498A2;
+}
+.here{
+  border-left: .5px solid #9498A2;
 }
 .menuphoto{
   display: flex;
   height: 300px;
   width: inherit;
   flex-direction: column;
+  border: none;
 }
 .namephoto{
   display: flex;
    height: 50px;
    width: inherit;
    justify-content: flex-start;
+   border: none;
 }
 .description{
   height: 50px;
@@ -218,20 +333,23 @@ body{
   height: 200px;
   width: inherit;
   background: #DCDDE1;
+  border: none;
 }
 .stats{
   height: 35px;
   width: inherit;
+  border: none;
 }
 .sharing{
   display: flex;
   height: 20px;
-  width: inherit,
-
+  width: inherit;
+  border: none;
 }
 .like, .comment, .share{
   flex: 1;
   text-align: center;
+  border: .5px solid #9498A2;
 }
 .profilephoto{
   height: 40px;
@@ -241,8 +359,10 @@ body{
 }
 .name{
   height: 18px;
-  width: auto;
-  margin-left: 8px;
+  width: 120px;
+  margin-left: 1px;
+  font-weight: bold;
+  border: none;
 }
 .namephoto1{
   display: flex;
@@ -250,17 +370,45 @@ body{
   height: inherit;
   justify-content: center;
   align-items: center;
-}.namephoto2{
+  border: none;
+}
+.namephoto2{
   display: flex;
   width: calc(570px/2);
   height: inherit;
   flex-direction: column;
   justify-content: space-around;
   position: relative;
+  border: none;
 }
 .fecha{
   height: 13px;
-  width: 50px;
-  margin-left: 8px;
-  font-size: 12px;
+  width: 70px;
+  margin-left: 1px;
+  font-size: 8px;
+  border: none;
+  position: relative;
+  bottom: 7px;
+  color: #9498A2;
+}
+.description{
+  border: none;
+  position: relative;
+}
+.descripcion{
+  border: none;
+  position: relative;
+  left: 9px;
+
+}
+.translation{
+  border: none;
+  position: relative;
+  left: 9px;
+  color: #9498A2;
+}
+.like,
+.comment,
+.share{
+  color: #9498A2;
 }
